@@ -45,12 +45,11 @@ fn update(msg: Msg, model: &mut Model, _: &mut impl Orders<Msg>) {
 // `view` describes what to display.
 fn view(model: &Model) -> Node<Msg> {
     div![
-        "This is a counter: ",
+        "This is a counter which adds two pounds to your bank every time you hover over it: ",
         C!["counter"],
         button![model, ev(Ev::PointerOver, |_| Msg::Increment),],
     ]
 }
-
 // ------ ------
 //     Start
 // ------ ------
